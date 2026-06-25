@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit Redação ENEM Nota 1000 — Domine a Redação em 2025</title>
+<meta name="description" content="O kit completo para tirar nota 1000 na redação do ENEM. Estrutura, repertórios, temas prováveis e redação comentada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --azul:    #1A237E;
+    --azul-m:  #1565C0;
+    --azul-cl: #E3F2FD;
+    --ama:     #FFD600;
+    --ama-cl:  #FFF9C4;
+    --verde:   #2E7D32;
+    --verm:    #C62828;
+    --cinza:   #37474F;
+    --bg:      #F7F9FC;
+    --branco:  #ffffff;
+    --borda:   #E0E7EF;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--cinza);
+    line-height: 1.65;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--azul);
+    padding: 0 1.5rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,.025) 40px,
+      rgba(255,255,255,.025) 80px
+    );
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: center;
+    padding: 1.4rem 0 2.5rem;
+    position: relative;
+  }
+
+  .topbar span {
+    background: var(--ama);
+    color: var(--azul);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: .45rem 1.1rem;
+    border-radius: 99px;
+  }
+
+  .hero-content { position: relative; max-width: 720px; margin: 0 auto; }
+
+  .hero-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--ama);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+  }
+
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 1.4rem;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--ama);
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,.82);
+    max-width: 540px;
+    margin: 0 auto 2.4rem;
+  }
+
+  .pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .6rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .pill {
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+    color: #fff;
+    border-radius: 99px;
+    padding: .4rem 1rem;
+    font-size: .85rem;
+    font-weight: 500;
+  }
+
+  /* ── CTA BOX ── */
+  .cta-box {
+    background: var(--branco);
+    border-radius: 18px;
+    padding: 2rem 2rem 1.6rem;
+    max-width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 24px 60px rgba(0,0,0,.28);
+  }
+
+  .price-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    margin-bottom: .4rem;
+  }
+
+  .price-old {
+    text-decoration: line-through;
+    color: #9E9E9E;
+    font-size: 1rem;
+  }
+
+  .price-new {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--azul);
+  }
+
+  .price-label {
+    font-size: .82rem;
+    color: #78909C;
+    margin-bottom: 1.2rem;
+  }
+
+  .btn-cta {
+    display: block;
+    width: 100%;
+    background: var(--ama);
+    color: var(--azul);
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform .15s, box-shadow .15s;
+    letter-spacing: .01em;
+  }
+
+  .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,214,0,.45); }
+
+  .seguro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: #90A4AE;
+  }
+
+  /* ── SEÇÕES GENÉRICAS ── */
+  section { padding: 4rem 1.5rem; }
+
+  .container { max-width: 800px; margin: 0 auto; }
+
+  .section-label {
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--azul-m);
+    margin-bottom: .6rem;
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    color: var(--azul);
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+  }
+
+  .section-sub {
+    font-size: 1.05rem;
+    color: #546E7A;
+    max-width: 600px;
+  }
+
+  /* ── DOR ── */
+  .dor { background: #fff; }
+
+  .dor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .dor-card {
+    background: #FFF3E0;
+    border-left: 4px solid #EF6C00;
+    border-radius: 10px;
+    padding: 1.2rem 1.4rem;
+    font-size: .97rem;
+    color: var(--cinza);
+  }
+
+  .dor-card strong { display: block; color: #E65100; margin-bottom: .3rem; font-size: 1rem; }
+
+  /* ── O QUE TEM ── */
+  .conteudo { background: var(--azul-cl); }
+
+  .modulos { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+
+  .modulo {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.3rem 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  }
+
+  .modulo-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    margin-top: .1rem;
+  }
+
+  .modulo-titulo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--azul);
+    margin-bottom: .3rem;
+  }
+
+  .modulo-desc { font-size: .93rem; color: #546E7A; }
+
+  /* ── PARA QUEM ── */
+  .para-quem { background: #fff; }
+
+  .pq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .pq-card {
+    background: var(--azul-cl);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-align: center;
+    font-size: .94rem;
+    color: var(--cinza);
+  }
+
+  .pq-card .ico { font-size: 2rem; margin-bottom: .6rem; }
+  .pq-card strong { display: block; color: var(--azul); font-size: 1rem; margin-bottom: .2rem; }
+
+  /* ── PROVA SOCIAL ── */
+  .prova { background: var(--azul); }
+  .prova .section-title { color: #fff; }
+  .prova .section-label { color: var(--ama); }
+
+  .depos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .depo {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 14px;
+    padding: 1.4rem;
+    color: rgba(255,255,255,.9);
+    font-size: .93rem;
+    line-height: 1.6;
+  }
+
+  .depo-nome {
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--ama);
+    font-size: .9rem;
+  }
+
+  .estrelas { color: var(--ama); font-size: 1.1rem; margin-bottom: .6rem; }
+
+  /* ── OFERTA ── */
+  .oferta { background: var(--ama-cl); }
+
+  .oferta-box {
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    max-width: 540px;
+    margin: 2rem auto 0;
+    box-shadow: 0 12px 40px rgba(0,0,0,.1);
+    text-align: center;
+  }
+
+  .oferta-itens {
+    list-style: none;
+    text-align: left;
+    margin: 1.4rem 0 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+
+  .oferta-itens li {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: .97rem;
+  }
+
+  .oferta-itens li::before {
+    content: '✓';
+    background: var(--verde);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+    font-size: .75rem;
+    flex-shrink: 0;
+  }
+
+  .garantia {
+    background: #E8F5E9;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-size: .88rem;
+    color: var(--verde);
+    font-weight: 600;
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    justify-content: center;
+  }
+
+  /* ── FAQ ── */
+  .faq { background: #fff; }
+
+  .faq-lista { margin-top: 2rem; display: flex; flex-direction: column; gap: .8rem; }
+
+  details {
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  summary {
+    padding: 1.1rem 1.4rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--azul);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+  }
+
+  summary::after { content: '+'; font-size: 1.3rem; color: var(--azul-m); }
+  details[open] summary::after { content: '−'; }
+
+  details p {
+    padding: 1rem 1.4rem 1.2rem;
+    font-size: .95rem;
+    color: #546E7A;
+    background: #fff;
+  }
+
+  /* ── FOOTER CTA ── */
+  .footer-cta {
+    background: var(--azul);
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+
+  .footer-cta h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    color: #fff;
+    margin-bottom: .8rem;
+  }
+
+  .footer-cta p {
+    color: rgba(255,255,255,.75);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-cta .btn-cta { max-width: 380px; margin: 0 auto; }
+
+  footer {
+    background: #0D1B6E;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: .8rem;
+    color: rgba(255,255,255,.4);
+  }
+
+  /* ── RESPONSIVO ── */
+  @media (max-width: 500px) {
+    .cta-box { padding: 1.5rem 1.2rem; }
+    .price-new { font-size: 2.2rem; }
+    .modulo { flex-direction: column; gap: .6rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HERO ─────────────────────────────────────── -->
+<section class="hero">
+  <div class="topbar"><span>⚡ ENEM 2025 — Vagas Limitadas</span></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Kit Digital Completo</p>
+    <h1>Tire <em>Nota 1000</em><br>na Redação do ENEM</h1>
+    <p class="hero-sub">
+      Estrutura, repertórios prontos, temas prováveis e uma redação nota 1000 comentada linha a linha — tudo que você precisa para chegar na prova sem medo.
+    </p>
+    <div class="pill-row">
+      <span class="pill">📘 Guia das 5 Competências</span>
+      <span class="pill">📚 Banco de Repertórios</span>
+      <span class="pill">🎯 Temas Prováveis 2025</span>
+      <span class="pill">✅ Redação Comentada</span>
+      <span class="pill">📋 Checklist de Revisão</span>
+    </div>
+
+    <div class="cta-box">
+      <div class="price-row">
+        <span class="price-old">R$67</span>
+        <span class="price-new">R$27</span>
+      </div>
+      <p class="price-label">pagamento único • acesso imediato</p>
+      <a href="https://pay.cakto.com.br/ut6bt6b_941596" class="btn-cta">
+        QUERO MEU KIT AGORA →
+      </a>
+      <p class="seguro">🔒 Pagamento 100% seguro via Cakto</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── DOR ───────────────────────────────────────── -->
+<section class="dor">
+  <div class="container">
+    <p class="section-label">Isso soa familiar?</p>
+    <h2 class="section-title">A redação ainda te assusta?</h2>
+    <div class="dor-grid">
+      <div class="dor-card"><strong>❌ Sem estrutura</strong>Você escreve mas não sabe se está no caminho certo. O parágrafo saiu bem? A proposta está completa?</div>
+      <div class="dor-card"><strong>❌ Sem repertório</strong>Na hora de argumentar, sua cabeça trava. Você sabe que precisa de citações, mas não tem nenhuma guardada.</div>
+      <div class="dor-card"><strong>❌ Medo do tema</strong>E se cair um tema que você nunca estudou? O ENEM cobra contexto, e você não sabe como entrar em qualquer assunto.</div>
+      <div class="dor-card"><strong>❌ Proposta travada</strong>A conclusão é o parágrafo que mais pesa — e a maioria perde pontos por não saber o que escrever na C5.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTEÚDO ───────────────────────────────────── -->
+<section class="conteudo">
+  <div class="container">
+    <p class="section-label">O que está incluído</p>
+    <h2 class="section-title">5 partes que transformam sua redação</h2>
+    <p class="section-sub">Um material direto ao ponto — sem enrolação, sem teoria de faculdade. Só o que o ENEM cobra.</p>
+    <div class="modulos">
+      <div class="modulo">
+        <div class="modulo-icon">📘</div>
+        <div>
+          <div class="modulo-titulo">Guia da Estrutura Nota 1000</div>
+          <div class="modulo-desc">As 5 competências detalhadas, a fórmula dos 4 parágrafos, o que o corretor espera em cada linha e o que zera sua redação.</div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="modulo-icon">📚</div>
+        <div>
+          <div class="modulo-titulo">Banco de Repertórios Socioculturais</div>
+          <div class="modulo-desc">Citações, dados, leis, filósofos e filmes organizados por tema: tecnologia, meio ambiente, educação, direitos humanos, saúde mental e gênero.</div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="modulo-icon">🎯</div>
+        <div>
+          <div class="modulo-titulo">Temas Mais Prováveis 2025</div>
+          <div class="modulo-desc">8 temas analisados com palavras-chave prontas. Inteligência artificial, saúde mental, desinformação, crise climática e mais.</div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="modulo-icon">✅</div>
+        <div>
+          <div class="modulo-titulo">Redação Nota 1000 Comentada</div>
+          <div class="modulo-desc">Uma redação completa com anotações em cada parágrafo mostrando por que cada trecho vale pontos — você lê como um corretor.</div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="modulo-icon">📋</div>
+        <div>
+          <div class="modulo-titulo">Checklist de Revisão</div>
+          <div class="modulo-desc">Lista com todos os pontos críticos para revisar nos últimos 10 minutos de prova. Nada passa em branco.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PARA QUEM ──────────────────────────────────── -->
+<section class="para-quem">
+  <div class="container">
+    <p class="section-label">Para quem é</p>
+    <h2 class="section-title">Esse kit foi feito para você se…</h2>
+    <div class="pq-grid">
+      <div class="pq-card"><div class="ico">📅</div><strong>Está no 3° ano</strong>com o ENEM chegando e sente que redação ainda é seu ponto fraco.</div>
+      <div class="pq-card"><div class="ico">🔁</div><strong>Vai prestar de novo</strong>e quer saber exatamente o que errou antes e como corrigir.</div>
+      <div class="pq-card"><div class="ico">🎯</div><strong>Tem uma meta alta</strong>e sabe que a redação pode ser o diferencial para a faculdade que você quer.</div>
+      <div class="pq-card"><div class="ico">⏰</div><strong>Não tem muito tempo</strong>e precisa do conteúdo mais importante sem ter que garimpar a internet.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DEPOIMENTOS ────────────────────────────────── -->
+<section class="prova">
+  <div class="container">
+    <p class="section-label">O que dizem</p>
+    <h2 class="section-title">Quem usou aprovou</h2>
+    <div class="depos-grid">
+      <div class="depo">
+        <div class="estrelas">★★★★★</div>
+        "Sempre tive pavor da redação. Com o banco de repertórios eu parei de travar na hora de argumentar. Pela primeira vez me senti segura escrevendo."
+        <div class="depo-nome">— Letícia M., Pernambuco</div>
+      </div>
+      <div class="depo">
+        <div class="estrelas">★★★★★</div>
+        "O checklist de revisão parece simples mas mudou tudo. Eu marcava cada item antes de entregar e sabia que não tinha deixado nada passar."
+        <div class="depo-nome">— Gabriel T., São Paulo</div>
+      </div>
+      <div class="depo">
+        <div class="estrelas">★★★★★</div>
+        "A redação comentada foi o que eu precisava. Ler com as anotações me fez entender na prática o que cada competência pede."
+        <div class="depo-nome">— Ana Clara R., Bahia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OFERTA ─────────────────────────────────────── -->
+<section class="oferta">
+  <div class="container">
+    <p class="section-label" style="text-align:center">A oferta</p>
+    <h2 class="section-title" style="text-align:center">Tudo isso por R$27</h2>
+    <div class="oferta-box">
+      <ul class="oferta-itens">
+        <li>Guia da Estrutura Nota 1000</li>
+        <li>Banco de Repertórios por Tema</li>
+        <li>Temas Mais Prováveis 2025</li>
+        <li>Redação Nota 1000 Comentada</li>
+        <li>Checklist de Revisão para a Prova</li>
+      </ul>
+      <div class="price-row">
+        <span class="price-old" style="font-size:1.1rem">R$67</span>
+        <span class="price-new">R$27</span>
+      </div>
+      <p style="color:#78909C;font-size:.88rem;margin-bottom:1.2rem">pagamento único • PDF entregue imediatamente</p>
+      <a href="https://pay.cakto.com.br/ut6bt6b_941596" class="btn-cta">
+        QUERO MEU KIT AGORA →
+      </a>
+      <div class="garantia">🛡️ Compra segura — entrega imediata após o pagamento</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ───────────────────────────────────────── -->
+<section class="faq">
+  <div class="container">
+    <p class="section-label">Dúvidas</p>
+    <h2 class="section-title">Perguntas frequentes</h2>
+    <div class="faq-lista">
+      <details>
+        <summary>Como vou receber o material?</summary>
+        <p>Assim que o pagamento for confirmado, você recebe o link para baixar o PDF direto no seu e-mail. Acesso imediato, sem espera.</p>
+      </details>
+      <details>
+        <summary>O kit serve para quem nunca estudou redação?</summary>
+        <p>Sim. O guia foi feito do zero — você não precisa de nenhum conhecimento prévio. Ele explica as 5 competências de forma simples e direta.</p>
+      </details>
+      <details>
+        <summary>Esse kit substitui um cursinho?</summary>
+        <p>Ele não substitui a prática de escrever, mas te dá toda a base e os insumos (estrutura, repertórios, modelo) que você precisa para treinar da forma certa.</p>
+      </details>
+      <details>
+        <summary>Posso usar no celular?</summary>
+        <p>Sim. O PDF abre em qualquer dispositivo — celular, tablet ou computador.</p>
+      </details>
+      <details>
+        <summary>E se eu não gostar?</summary>
+        <p>O produto é digital e entregue instantaneamente, então não há reembolso. Por isso o preço é acessível — você pode conferir tudo antes de decidir.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER CTA ─────────────────────────────────── -->
+<section class="footer-cta">
+  <h2>A prova tá chegando.<br>Chega preparado.</h2>
+  <p>R$27 que podem mudar o seu resultado — e a sua vida.</p>
+  <a href="https://pay.cakto.com.br/ut6bt6b_941596" class="btn-cta">
+    GARANTIR MEU KIT POR R$27 →
+  </a>
+</section>
+
+<footer>
+  © 2025 Kit Redação ENEM Nota 1000 · Produto digital
+</footer>
+
+</body>
+</html>
